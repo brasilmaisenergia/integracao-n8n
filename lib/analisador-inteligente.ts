@@ -61,7 +61,7 @@ export interface DadosFatura {
 }
 
 export interface PerfilConsumidor {
-  tipo: 'residencial' | 'comercial' | 'industrial' | 'rural';
+  tipo: 'residencial' | 'comercial' | 'industrial' | 'rural' | 'poder_publico';
   porte: 'micro' | 'pequeno' | 'medio' | 'grande';
   consumoMedioMensal: number;
   gastoMedioMensal: number;
