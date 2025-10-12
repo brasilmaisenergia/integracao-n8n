@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #2A4B7B;
+  --color-primary-dark: #1a3050;
+  --color-primary-light: #3a5b8b;
+  
+  --color-secondary: #FBC13A;
+  --color-secondary-dark: #e5a820;
+  --color-secondary-light: #fcd15a;
+  
+  --font-sans: 'Lato', system-ui, sans-serif;
+  --font-heading: 'Montserrat', system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900;
+    font-family: var(--font-sans);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+  }
+}
+
+@layer utilities {
+  .btn-primary {
+    @apply bg-secondary hover:bg-secondary-dark text-primary font-bold py-3 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1;
+  }
+  
+  .btn-secondary {
+    @apply bg-primary hover:bg-primary-dark text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2;
+  }
+  
+  .font-heading {
+    font-family: var(--font-heading);
+  }
+}
+
