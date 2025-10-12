@@ -392,7 +392,7 @@ export default function TrabalheConosco() {
       </section>
 
       <VoltMascot 
-        pose="trabalhando"
+        pose="thinking"
         message="Venha fazer parte do nosso time! ⚡💼"
       />
 

@@ -336,7 +336,7 @@ export default function ParaSuaEmpresa() {
       </section>
 
       <VoltMascot
-        pose="empresario"
+        pose="thumbs-up"
         message="Empresas que gastam mais de R$ 10 mil/mês em energia podem economizar muito! Preencha o formulário e descubra quanto."
         position="right"
         size="lg"

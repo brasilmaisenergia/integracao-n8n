@@ -437,7 +437,7 @@ export default function Franquias() {
       </section>
 
       <VoltMascot 
-        pose="celebrando"
+        pose="thumbs-up"
         message="Seja parte da revolução da energia solar! 🌟⚡"
       />
 

@@ -266,7 +266,7 @@ export default function Home() {
 
       {/* Volt Mascot */}
       <VoltMascot
-        pose="default"
+        pose="transparent"
         message="Olá! Sou o Volt e vou te guiar pelo ecossistema da Brasil Mais Energia. Clique em qualquer card para saber mais!"
         position="right"
         size="lg"

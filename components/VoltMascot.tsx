@@ -4,26 +4,27 @@ import { useState } from "react";
 import Image from "next/image";
 
 interface VoltMascotProps {
-  pose?: "default" | "explicador" | "celebrando" | "pensativo" | "empresario" | "professor" | "trabalhando" | "surpreso";
+  pose?: "transparent" | "pointing" | "thumbs-up" | "thinking";
   message?: string;
   position?: "left" | "right";
-  size?: "sm" | "md" | "lg";
+  size?: "sm" | "md" | "lg" | "xl";
   autoShow?: boolean;
 }
 
 export default function VoltMascot({
-  pose = "default",
+  pose = "transparent",
   message,
   position = "right",
-  size = "md",
+  size = "lg",
   autoShow = true,
 }: VoltMascotProps) {
   const [showBalloon, setShowBalloon] = useState(autoShow);
 
   const sizeClasses = {
-    sm: "w-16 h-16",
-    md: "w-24 h-24",
-    lg: "w-32 h-32",
+    sm: "w-20 h-20",
+    md: "w-28 h-28",
+    lg: "w-36 h-36",
+    xl: "w-48 h-48",
   };
 
   const positionClasses = {

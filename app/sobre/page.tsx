@@ -239,7 +239,7 @@ export default function Sobre() {
       </section>
 
       <VoltMascot 
-        pose="celebrando"
+        pose="thumbs-up"
         message="Juntos estamos construindo um Brasil mais sustentável! 🌱⚡"
       />
 

@@ -284,7 +284,7 @@ export default function Marketplace() {
       </section>
 
       <VoltMascot
-        pose="trabalhando"
+        pose="thinking"
         message="Encontre tudo que você precisa para seu projeto solar aqui no marketplace!"
         position="right"
         size="lg"

@@ -357,7 +357,7 @@ export default function Cursos() {
       </section>
 
       <VoltMascot
-        pose="professor"
+        pose="pointing"
         message="Invista na sua educação e se torne um especialista em energia! Nossos cursos são práticos e focados no mercado."
         position="right"
         size="lg"

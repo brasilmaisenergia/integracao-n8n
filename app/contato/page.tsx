@@ -256,7 +256,7 @@ export default function Contato() {
       </section>
 
       <VoltMascot 
-        pose="default"
+        pose="transparent"
         message="Estou aqui para ajudar! Entre em contato! 💬⚡"
       />
 

@@ -305,7 +305,7 @@ export default function ParaSuaCasa() {
       </section>
 
       <VoltMascot
-        pose="explicador"
+        pose="pointing"
         message="Preencha o formulário e nossa equipe vai calcular exatamente quanto você pode economizar!"
         position="right"
         size="lg"

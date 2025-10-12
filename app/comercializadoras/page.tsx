@@ -379,7 +379,7 @@ export default function Comercializadoras() {
       </section>
 
       <VoltMascot 
-        pose="empresario"
+        pose="thumbs-up"
         message="Junte-se às principais comercializadoras do Brasil! 💼⚡"
       />
 

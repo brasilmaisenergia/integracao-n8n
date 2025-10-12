@@ -397,7 +397,7 @@ export default function Fornecedores() {
       </section>
 
       <VoltMascot 
-        pose="trabalhando"
+        pose="thinking"
         message="Vamos juntos impulsionar a energia solar no Brasil! 🔧⚡"
       />
 
