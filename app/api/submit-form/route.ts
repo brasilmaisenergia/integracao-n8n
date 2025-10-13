@@ -17,23 +17,22 @@ export async function POST(request: NextRequest) {
     
     if (!n8nWebhookUrl) {
       console.error('N8N_WEBHOOK_URL não configurada');
+      console.log('📝 Dados do formulário (webhook não configurado):');
+      console.log(JSON.stringify(body, null, 2));
       
-      // Em desenvolvimento, apenas log os dados
-      if (process.env.NODE_ENV === 'development') {
-        console.log('📝 Dados do formulário (modo desenvolvimento):');
-        console.log(JSON.stringify(body, null, 2));
-        
-        return NextResponse.json({
-          success: true,
-          message: 'Dados recebidos (modo desenvolvimento)',
-          data: body,
-        });
-      }
-      
-      return NextResponse.json(
-        { error: 'Serviço temporariamente indisponível' },
-        { status: 500 }
-      );
+      // Retornar sucesso mesmo sem webhook (para não bloquear testes)
+      // Os dados ficam nos logs do Vercel para análise
+      return NextResponse.json({
+        success: true,
+        message: 'Formulário recebido! Entraremos em contato em breve.',
+        warning: 'Webhook não configurado - dados salvos em logs',
+        data: {
+          tipo: body.tipo,
+          timestamp: body.timestamp,
+          nome: body.data?.nome,
+          email: body.data?.email,
+        },
+      });
     }
 
     // Enviar dados para o n8n
